@@ -18,7 +18,7 @@ namespace PKIM.DynamicConnectivity
                 var percolation = new Percolation(n);
                 while (!percolation.Percolates())
                 {
-                    int row = StdRandom.Uniform(0, n);
+                    int row = StdRandom.Uniform(0, n); 
                     int col = StdRandom.Uniform(0, n);
                     percolation.Open(row, col);
                 }
