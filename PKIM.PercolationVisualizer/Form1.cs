@@ -14,9 +14,6 @@ namespace PKIM.PercolationVisualizer
 {
     public partial class Form1 : Form
     {
-        private HashSet<int> FullSites { get; set; }
-        private int ClosedSites { get; set; }
-        private HashSet<int> OpenSites { get; set; }
         private Percolation Percolation { get; set; }
         private const int N = 20;
         public Form1()
@@ -24,8 +21,6 @@ namespace PKIM.PercolationVisualizer
             InitializeComponent();
             this.Size = new Size(3000, 3000);
             this.Percolation = new Percolation(N);
-            this.OpenSites = new HashSet<int>();
-            this.FullSites = new HashSet<int>();
             this.Paint += Draw2DArray;
         }
 
@@ -50,15 +45,9 @@ namespace PKIM.PercolationVisualizer
 
         public void draw(Percolation perc, int N)
         {
-            //StdDraw.clear();
-            //StdDraw.setPenColor(StdDraw.BLACK);
-            //StdDraw.setXscale(-.05 * N, 1.05 * N);
-            //StdDraw.setYscale(-.05 * N, 1.05 * N);   // leave a border to write text
-            //StdDraw.filledSquare(N / 2.0, N / 2.0, N / 2.0);
-
-            int step = 15; //distance between the rows and columns
-            int width = 14; //the width of the rectangle
-            int height = 14; //the height of the rectangle
+            int step = 15;
+            int width = 14; 
+            int height = 14;
 
 
 
@@ -75,18 +64,15 @@ namespace PKIM.PercolationVisualizer
 
                             if (perc.IsFull(row, col))
                             {
-                                FullSites.Add(row * N + col);
                                 boxColor = Brushes.LightBlue;
                             }
 
                             else if (perc.IsOpen(row, col))
                             {
-                                OpenSites.Add(row * N + col);
                                 boxColor = Brushes.White;
                             }
                             else
                             {
-                                ClosedSites++;
                                 boxColor = Brushes.Black;
                             }
 
@@ -97,18 +83,6 @@ namespace PKIM.PercolationVisualizer
                     }
                 }
             }
-
-
-
-
-
-            //// write status text
-            //StdDraw.setFont(new Font("SansSerif", Font.PLAIN, 12));
-            //StdDraw.setPenColor(StdDraw.BLACK);
-            //StdDraw.text(.25 * N, -N * .025, opened + " open sites");
-            //if (perc.percolates()) StdDraw.text(.75 * N, -N * .025, "percolates");
-            //else StdDraw.text(.75 * N, -N * .025, "does not percolate");
-
         }
     }
 }
