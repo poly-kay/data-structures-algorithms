@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKIM.Test", "PKIM.Test\PKIM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKIM.Extensions", "PKIM.Extensions\PKIM.Extensions.csproj", "{8D3D3A16-9530-40BC-9DEC-B64B6F22299B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKIM.DynamicConnectivity", "PKIM.DynamicConnectivity\PKIM.DynamicConnectivity.csproj", "{67F2AF14-DEE2-4880-954D-192CECF0D00F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PKIM.DynamicConnectivity", "PKIM.DynamicConnectivity\PKIM.DynamicConnectivity.csproj", "{67F2AF14-DEE2-4880-954D-192CECF0D00F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKIM.PercolationVisualizer", "PKIM.PercolationVisualizer\PKIM.PercolationVisualizer.csproj", "{133211F9-7DA4-4FB2-94DF-1E29C4E17741}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{67F2AF14-DEE2-4880-954D-192CECF0D00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67F2AF14-DEE2-4880-954D-192CECF0D00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F2AF14-DEE2-4880-954D-192CECF0D00F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133211F9-7DA4-4FB2-94DF-1E29C4E17741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133211F9-7DA4-4FB2-94DF-1E29C4E17741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133211F9-7DA4-4FB2-94DF-1E29C4E17741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133211F9-7DA4-4FB2-94DF-1E29C4E17741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

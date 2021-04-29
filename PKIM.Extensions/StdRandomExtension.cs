@@ -21,7 +21,7 @@ namespace PKIM.Extensions
             get { return seed; }
             set
             {
-                seed = value;
+                seed = Guid.NewGuid().GetHashCode();
                 random = new Random(seed);
             }
         }

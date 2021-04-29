@@ -32,7 +32,7 @@ namespace Test
         [TestMethod]
         public void PercolationTest()
         {
-            var percolationStats = new PercolationStats(20, 10);
+            var percolationStats = new PercolationStats(100, 10);
         }
     }
 }
