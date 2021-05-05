@@ -1,13 +1,6 @@
 ﻿using PKIM.DynamicConnectivity;
 using PKIM.Extensions;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PKIM.PercolationVisualizer
@@ -46,7 +39,7 @@ namespace PKIM.PercolationVisualizer
         public void draw(Percolation perc, int N)
         {
             int step = 8;
-            int width = 8; 
+            int width = 8;
             int height = 8;
 
 

@@ -2,16 +2,16 @@
 
 namespace PKIM.LinkedList
 {
-    public class LinkedList
+    public class LinkedList<T>
     {
         public Node head; // head of list  
 
         /* Linked list Node*/
         public class Node
         {
-            public int data;
+            public T data;
             public Node next;
-            public Node(int d)
+            public Node(T d)
             {
                 data = d;
                 next = null;
@@ -50,7 +50,7 @@ namespace PKIM.LinkedList
         /* Utility functions */
 
         /* Inserts a new Node at front of the list. */
-        public void push(int new_data)
+        public void push(T new_data)
         {
             /* 1 & 2: Allocate the Node &  
                     Put in the data*/
@@ -61,6 +61,11 @@ namespace PKIM.LinkedList
 
             /* 4. Move the head to point to new Node */
             head = new_node;
+        }
+
+        public void pop()
+        {
+            head = head.next;
         }
 
         /* Function to print linked list */

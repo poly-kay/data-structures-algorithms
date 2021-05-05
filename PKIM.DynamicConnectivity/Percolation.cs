@@ -122,7 +122,7 @@ namespace PKIM.DynamicConnectivity
             {
                 return throwException ? throw new IndexOutOfRangeException() : -1;
             }
-                
+
             return (row * N) + col;
         }
 
