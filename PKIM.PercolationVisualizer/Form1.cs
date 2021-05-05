@@ -15,7 +15,7 @@ namespace PKIM.PercolationVisualizer
     public partial class Form1 : Form
     {
         private Percolation Percolation { get; set; }
-        private const int N = 20;
+        private const int N = 100;
         public Form1()
         {
             InitializeComponent();
@@ -35,19 +35,19 @@ namespace PKIM.PercolationVisualizer
                 if (!Percolation.IsOpen(row, col))
                 {
                     Percolation.Open(row, col);
-                    draw(Percolation, N);
                 }
                 //  System.Threading.Thread.Sleep(1);
             }
+            draw(Percolation, N);
 
             var tt = (Percolation.OpenedSites * 1.00) / (N * N);
         }
 
         public void draw(Percolation perc, int N)
         {
-            int step = 15;
-            int width = 14; 
-            int height = 14;
+            int step = 8;
+            int width = 8; 
+            int height = 8;
 
 
 
