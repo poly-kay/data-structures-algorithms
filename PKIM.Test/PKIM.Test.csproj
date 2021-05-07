@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -19,6 +19,7 @@
     <ProjectReference Include="..\PKIM.BinarySearch\PKIM.BinarySearch.csproj" />
     <ProjectReference Include="..\PKIM.DynamicConnectivity\PKIM.DynamicConnectivity.csproj" />
     <ProjectReference Include="..\PKIM.Extensions\PKIM.Extensions.csproj" />
+    <ProjectReference Include="..\PKIM.StacksQueuesBags\PKIM.StacksQueuesBags.csproj" />
   </ItemGroup>
 
 </Project>
